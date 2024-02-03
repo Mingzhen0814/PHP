@@ -1,0 +1,15 @@
+<form action="brad50.php">
+    Account: <input name="account"><br>
+    Gender: <input name="gender" type="radio" value="M" checked>Male
+            <input name="gender" type="radio" value="F">Female<br>
+    Hobby: <br> 
+            <!-- 1. name="hobby[]" 後端接收資料才會以陣列形式收取，不會資料後蓋前 -->
+            <!-- 2. name取不同名字 後端接收資料不會資料後蓋前，但是要處理每個變數(不輸入也會傳送) -->
+            <input name="hobby[]" type="checkbox" value="1">1
+            <input name="hobby[]" type="checkbox" value="2">2
+            <input name="hobby[]" type="checkbox" value="3">3<br>
+            <input name="hobby[]" type="checkbox" value="4">4
+            <input name="hobby[]" type="checkbox" value="5">5
+            <input name="hobby[]" type="checkbox" value="6">6<br>
+    <input type="submit" value="test">
+</form>

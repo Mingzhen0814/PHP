@@ -1,0 +1,23 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    var isDataValid = false;
+    function checkAccount(){
+        $('#mesg').load('checkAccount.php?account=' + $('#account').val());
+    }
+    function checkFormData(){
+        return true;
+    }
+</script>
+<h1>Register</h1>
+<hr>
+<form action="brad43.php" method="post" onsubmit="return checkFormData();" enctype="multipart/form-data">
+    <!-- 預設方法為get -->
+    <!-- POST才不會把帳號密碼弄在網址上，並且不可被家為書籤 --> 
+    <!-- onblur失焦 -->
+    Account: <input id="account" name="account" onblur="checkAccount()">
+    <span id="mesg"></span><br>
+    Password: <input type="password" name="passwd"><br>
+    Name: <input name="name"><br>
+    Icon: <input type="file" name="icon"><br>
+    <input type="submit" value="Register">
+</form>

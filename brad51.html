@@ -1,0 +1,14 @@
+<!-- 有檔案上傳的元件需用method="post" -->
+<!-- w3.org沒有限制url的長度，但不同的瀏覽器有不同的長度限制(實作) -->
+
+<!-- enctype編碼形式 -->
+<form method="post" enctype="multipart/form-data" action="brad52.php">
+    File: <input type="file" name="upload"><br>
+    <input type="submit" value="Upload">
+    <!-- https://www.php.net/manual/en/features.file-upload.errors.php -->
+    
+    <!-- https://www.php.net/manual/zh/function.move-uploaded-file.php -->
+    <!-- 更改限制表單上傳檔案的大小 -->
+    <!-- <input type="hidden" name="MAX_FILE_SIZE" value="300000" /> -->
+    <input type="hidden" name>
+</form>

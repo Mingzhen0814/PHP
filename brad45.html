@@ -1,0 +1,38 @@
+<script>
+    // https://www.w3schools.com/js/js_ajax_http.asp
+    var xhttp = new XMLHttpRequest();
+    // onreadystatechange: property
+    xhttp.onreadystatechange = function(){
+        console.log("OK");
+        if (xhttp.readyState == 0){
+            document.getElementById('div0').innerHTML = '0 : request not initialized';
+        } else if (xhttp.readyState == 1) {
+            document.getElementById('div1').innerHTML = '1 : server connection established';
+        } else if (xhttp.readyState == 2) {
+            document.getElementById('div2').innerHTML = '2 : request received';
+        } else if (xhttp.readyState == 3) {
+            document.getElementById('div3').innerHTML = '3 : processing request';
+        } else if (xhttp.readyState == 4) {
+            document.getElementById('div4').innerHTML = '4 : request finished and response is ready';
+        }
+    }
+    // callback
+    xhttp.onload = function(){
+        // define callback
+        document.getElementById('lottery').innerHTML = xhttp.responseText; // JSON也包含Text
+    }
+
+    function test1(){
+        xhttp.open("GET", "brad46.php");
+        xhttp.send();
+    }
+
+</script>
+<input type="button" onclick="test1()" value="Test1"><hr>
+<div id="div0"></div>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<hr>
+<div id="lottery"></div>
