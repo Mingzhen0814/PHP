@@ -7,6 +7,4 @@
     foreach ($data as $v) {
         echo "{$v->Name}<br>";
     }
-
-
 ?>
