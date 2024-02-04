@@ -14,5 +14,4 @@
         $sql = "INSERT INTO gift(name, addr, feature, picurl, city, town, lat, lng) VALUES ('{$v->Name}', '{$v->SalePlace}', '{$v->Feature}','{$v->Column1}','{$v->County}','{$v->Township}',{$v->Latitude},{$v->Longitude})";
         $myspli->query($sql);
     }
-
 ?>

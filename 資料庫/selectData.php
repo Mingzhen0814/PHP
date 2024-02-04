@@ -12,5 +12,4 @@
         // echo "{$row->name}:{$row->city}<br>";
         echo "{$row->gname}:{$row->county}<br>";
     }
-
 ?>

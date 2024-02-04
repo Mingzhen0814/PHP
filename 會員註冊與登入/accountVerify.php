@@ -1,5 +1,5 @@
 <?php
-    if(! isset($_POST['account'])) header('Location: brad43.php'); // 沒有填帳號跳轉到登入畫面
+    if(! isset($_POST['account'])) header('Location: accountVerify.php'); // 沒有填帳號跳轉到登入畫面
 
     $account = $_POST['account'];
     $passwd = password_hash($_POST['passwd'], PASSWORD_DEFAULT);
@@ -40,6 +40,6 @@
             echo 'XX';
         };  
     } else {
-        header('Location: brad43.php'); // 登入失敗跳轉到登入畫面
+        header('Location: accountVerify.php'); // 登入失敗跳轉到登入畫面
     }
 ?>

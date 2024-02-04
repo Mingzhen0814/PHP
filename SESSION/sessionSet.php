@@ -1,5 +1,5 @@
 <?php
-    include("bradapis.php"); // 先定義學生物件
+    include("apis.php"); // 先定義學生物件
 
     session_start(); // 在此頁開啟組態檔的session(僅此頁)
     $rand = rand(1,49); // $rand: 區域變數
@@ -19,4 +19,4 @@
     $s1->setMath(100); // 透過物件改變會傳到其他頁面(透過記憶體位置存放)
 ?>
 <hr>
-<a href="brad56.php">Next</a>
+<a href="sessionPresent.php">Next</a>

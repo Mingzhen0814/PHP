@@ -17,4 +17,4 @@
 
 ?>
 <hr>
-<a href="brad57.php">Game Over</a>
+<a href="sessionDestroy.php">Game Over</a>

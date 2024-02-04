@@ -1,5 +1,5 @@
 <?php
-    include("bradapis.php");
+    include("apis.php");
     session_start();
     if (!isset($_SESSION["member"])) header("location: brad44.php");
     $member = $_SESSION['member'];

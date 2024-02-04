@@ -17,5 +17,4 @@
         $stmt->bind_param('ssssssdd', $v->Name, $v->SalePlace, $v->Feature, $v->Column1, $v->County, $v->Township , $v->Latitude, $v->Longitude);
         $stmt->execute();
     }
-
 ?>
